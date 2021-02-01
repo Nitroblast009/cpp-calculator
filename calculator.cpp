@@ -1,5 +1,6 @@
 #include <iostream>
+#include <cstdlib>
 
-void main() {
+void hi() {
     std::cout << "hi!";
 }
