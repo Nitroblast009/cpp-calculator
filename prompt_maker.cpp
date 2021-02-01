@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cstdlib>
-
+#include <cal 
 int main() {
     std::string promptMessage;
     std::cin >> promptMessage;
-    std::cout << promptMessage;
+    std::cin 
     return EXIT_SUCCESS;
 }
