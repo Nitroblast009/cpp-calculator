@@ -2,5 +2,8 @@
 #include <cstdlib>
 
 int main() {
-    return 0;
+    std::string promptMessage;
+    std::cin >> promptMessage;
+    std::cout << promptMessage;
+    return EXIT_SUCCESS;
 }
