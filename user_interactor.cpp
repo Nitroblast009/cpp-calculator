@@ -15,11 +15,24 @@ char getUserOperationType() {
 }
 
 int main() {
-    while(true)   {
-        double num1 = getUserOperand("\nWhat is the first number you would like to use? ");
-        double num2 = getUserOperand("What is the second number you would like to use? ");
-        switch(getUserOperationType()) { }
+    //get user input
+    double num1 = getUserOperand("What is the first number you would like to use? ");
+    double num2 = getUserOperand("What is the second number you would like to use? ");
+    double res;
+    
+    //do calculations
+    while(true) {
+        switch(getUserOperationType()) {
+            case '+': res = add(num1, num2); break;
+            case '-': res = sub(num1, num2); break;
+            case '*': res =  mul(num1, num2); break;
+            case '/': res = div(num1, num2); break;
+            default: std::cout << "\nThat isn't a valid option!\n"; continue;
+        }
         break;
     }
+    
+    //print output
+    std::cout << "The answer is " << res << ".";
     return EXIT_SUCCESS;
 }
